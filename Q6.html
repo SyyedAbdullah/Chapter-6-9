@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abdullah() {
+        let sub1 = document.getElementById("sub1").value;
+        let sub2 = document.getElementById("sub2").value;
+        let sub3 = document.getElementById("sub3").value;
+        let Tsub1 = 100
+        let Tsub2 = 100
+        let Tsub3 = 100
+        let Msub1 = document.getElementById("Msub1").value;
+        let Msub2 = document.getElementById("Msub2").value;
+        let Msub3 = document.getElementById("Msub3").value;
+        let Total = Tsub1 + Tsub2 + Tsub3
+        let TotalMarksObt = Msub1 + Msub2 + Msub3
+        Perc1 = (Msub1 / Tsub1) * 100
+        Perc2 = (Msub2 / Tsub2) * 100
+        Perc3 = (Msub3 / Tsub3) * 100
+        TotalPerc = (Perc1 + Perc2 + Perc3) / 3
+        let a = "Subject    Total Marks    Obtained Marks    Percentage"
+        document.write(a + "<br><br>")
+        let b = "English        100        54        54%"
+        document.write(b + "<br><br>")
+        let c = "Math        100        54        54%"
+        document.write(c + "<br><br>")
+        let d = "Urdu        100         48         48%"
+        document.write(d + "<br><br>")
+        let e = "        300         156         52%"
+        document.write(e + "<br><br>")
+
+
+
+
+    }
+
+
+
+
+</script>
+
+<body>
+    <p>Enter Subject 1: &nbsp;<input id="sub1" min="0" type="text" /></p>
+    <button id="click" onclick="abdullah();">Enter</button </body>
+    <p>Enter Subject 2: &nbsp;<input id="sub2" min="0" type="text" /></p>
+    <button id="click" onclick="abdullah();">Enter</button </body>
+    <p>Enter Subject 3: &nbsp;<input id="sub3" min="0" type="text" /></p>
+    <button id="click" onclick="abdullah();">Enter</button </body>
+    <p>Enter Subject 1 Marks: &nbsp;<input id="Msub1" min="0" type="number" /></p>
+    <button id="click" onclick="abdullah();">Enter</button </body>
+    <p>Enter Subject 2 Marks: &nbsp;<input id="Msub2" min="0" type="number" /></p>
+    <button id="click" onclick="abdullah();">Enter</button </body>
+    <p>Enter Subject 3 Marks: &nbsp;<input id="Msub3" min="0" type="number" /></p>
+    <button id="click" onclick="abdullah();">Enter</button </body>
+</body>
+
+</html>

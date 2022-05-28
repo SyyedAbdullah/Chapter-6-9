@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abdullah() {
+        let a = +document.getElementById("num").value;
+        document.write("Result: <br>");
+        document.write("The value of a is: " + a + "<br");
+        a2 = ++a;
+        document.write("The value of ++a is: " + a2 + "<br");
+        a3 = a++;
+        document.write("The value of a++ is: " + a3 + "<br");
+        a4 = --a;
+        document.write("The value of --a is: " + a4 + "<br");
+        a5 = a--;
+        document.write("The value of a-- is: " + a5 + "<br");
+    }
+
+
+
+
+
+
+</script>
+
+<body>
+    <p>Enter the number: &nbsp;<input id="num" min="0" type="number" /></p>
+    <button id="click" onclick="abdullah();">Calculate</button </body>
+
+</html>
